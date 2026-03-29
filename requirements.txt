@@ -1,5 +1,6 @@
 pandas>=2.0.0
-numpy>=1.24.0
+# TensorFlow on macOS arm64 can segfault with NumPy 2.x; keep NumPy 1.x for stable wheels.
+numpy>=1.24.0,<2.0.0
 matplotlib>=3.7.0
 seaborn>=0.12.0
 scikit-learn>=1.3.0
